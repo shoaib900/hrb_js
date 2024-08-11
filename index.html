@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <button oncontextmenu="alert('hello world')">alert</button>
@@ -97,13 +99,127 @@
         // var input = prompt("Enter the name","Shoaib")
         // console.log("Hello, " + input , typeof(input))
 
-        var input = prompt("Enter the age")
-        input = Number(input);
-        console.log("your age is " + input, typeof(input))
+        // var input = prompt("Enter the age")
+        // input = Number(input);
+        // console.log("your age is " + input, typeof(input))
+
+        // 08 if statement  vanilla javascript
+
+        // var a = 10;
+
+        // if( a === 10){
+        //     console.log("a value is " + a)
+        // }else if(a === 11){
+        //     console.log("a value is " + a)
+        // }else{
+        //     console.log("a value neither 10 nor 11")
+        // }
+
+        //    var  marks = prompt("Enter the value")
+
+        //     if(marks >= 90){
+        //         console.log("Grade A")
+        //         confirm("Grade A") // display grade like alert
+        //         document.write("Grade A") // display grade on page
+        //     }else if(marks >= 80){
+        //         console.log("Grade B")
+        //     }else if(marks >= 70){
+        //         console.log("Grade C")
+        //     }else if(marks >=60){
+        //         console.log("Grade D")
+        //     }
+
+        // 09 testing statements/ conditions 
+
+        //   marks = 111;
+
+        //   if (marks > 90 && marks < 100){
+        //     console.log("Grade A")
+        //   }else{
+        //     console.log("invalid marks out of 100")
+        //   }
+
+        // var x = 10;
+        // var y = 20;
+        // if(x === 12 || y === 30){
+        //     console.log("great you pass it")
+        // }
+
+        // 10 nested if statements 
+
+        // var a = 10;
+        // var b = 20;
+
+        // if(a === 10){
+        //     if(b === 20){
+        //         console.log("a and b are 10 and 20")
+        //     }else{
+        //         console.log("b is not 20")
+        //     }
+        // }else{
+        //     console.log("a is not 10")
+        // }
+
+        // 11 if statements with ecmascript 
+
+        // var a = 10;
+        // var b = 20;
+
+        // (a === 10) & console.log("Pass"); // if statement
+
+        // (a===10) ? console.log("pass") : console.log("Failed")
+
+        // (a === 10) ? console.log("Pass A") : (b === 10) ? console.log("Pass B") : console.log("Fail A and B")
+
+        // 12 switch statements 
+
+        // var a = 92;
+
+        // switch (a) {
+        //     case 90:
+        //         console.log("a value is 90")
+        //         break;
+        //     case 91:
+        //         console.log("a value is 91")
+        //         break;
+        //     default:
+        //         console.log("a value neither 90 not 91")
+        // }
+
+        // 13 arrays 
+
+        // var arr = []
+        // console.log(arr)
+        // arr[0] = "hello"
+        // arr[1] = "world"
+        // arr[2] = "!"
+        // console.log(arr)
+        // delete arr[0];
+        // console.log(arr)
+
+        var arr =["hello","world","!"]
+        // arr.push("hello world",34,true)
+        // console.log(arr)
+        // arr.pop();
+        // console.log(arr)
+
+        // arr.unshift("Hi! ")
+        // console.log(arr)
+        // arr.shift();
+        // console.log(arr)
+
+        // arr.splice(1,0,"Hi!",45)
+        // console.log(arr)
+
+        var slc = arr.slice(0,2)
+        console.log(slc)
+
+
 
 
     </script>
 
-    
+
 </body>
+
 </html>
