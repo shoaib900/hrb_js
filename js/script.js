@@ -147,13 +147,131 @@
 //   }, 0);
 // }
 
-setInterval(() => {
-        console.log("hello wrold")
+// setInterval(() => {
+//         console.log("hello wrold")
         
-}, 5000);
+// }, 5000);
+
+
 
 // 24 callback methods
+
+
+// function cb(){
+//     console.log("callback function")
+// }
+// function s(a,bb){
+//     console.log("hello function",a)
+//     bb()
+// }
+// s(90,cb)
+
 // 25 Promises
+
+// var p = new Promise( (res,rej)=>{
+//     setTimeout(()=>{
+//         rej("your promise is rejected")
+//     }, 2000)
+// }).then( data=> {
+//     console.log(data)
+// }).catch( err=> {
+//     console.log(err)
+// })
+// console.log(p)
+
+
 // 26 async / await
+
+// async function s(){
+//     await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+//       .catch(error => console.error('Error:', error));
+// }
+// s();
+
 // 27 class / OOP
-// 28 DOM Manipulations
+
+// class Student{
+//     setData(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     getData(){
+//         return `Name: ${this.name}, Age: ${this.age}`
+//     }
+// }
+// var s1 = new Student();
+// s1.setData("Ashutosh",28)
+// console.log(s1.getData())
+
+// var s2 = new Student();
+// s2.setData("Ahmad",23)
+// console.log(s2.getData())
+
+
+// class Student{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     getData(){
+//         return `Name: ${this.name}, Age: ${this.age}`
+//     }
+// }
+// var s1 = new Student("Ashutosh",28);
+// console.log(s1.getData())
+
+// var s2 = new Student("Ahmad",23);
+// console.log(s2.getData())
+
+// class Animal{
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+// class Dog extends Animal{
+//     getData(){
+//         return `Name: ${this.name}, Age: ${this.age}`;
+//     }
+// }
+// var d = new Dog("puppy",12)
+// console.log(d.getData())
+
+// class Employee{
+//     constructor(name,salary){
+//         this.name = name;
+//         this.salary = salary;
+//     }
+//     getData(){
+//         var sly = this.salary + 29000
+//         return `Name: ${this.name}, Salary: ${sly}`;
+//     }
+// }
+// var slry = new Employee("Ashutosh",990000)
+// console.log(slry.getData())
+
+class Shape{
+    show(){
+        console.log("I am a shape")
+    }
+}
+class Circle{
+    show(){
+        console.log("I am a Circle")
+    }
+}
+class Square{
+    show(){
+        console.log("I am a Square")
+    }
+}
+
+var s = new Shape()
+s.show()
+var sq = new Square()
+sq.show()
+var c = new Circle()
+c.show()
+        
